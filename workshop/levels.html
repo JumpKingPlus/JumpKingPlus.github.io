@@ -51,11 +51,10 @@
   </script>
 
     <div class="levels">
-
       <div class="card wip">
         <div class="details">
           <div class="title-level">
-              <h1>{{ site.workshop | size }}</h1>
+              <h1>{{ site.workshop | where: "hidden", false | size }}</h1>
               <span><span class="underlined">new</span> levels</span>
               <p class="desc">
                 are currently being worked on.
